@@ -4,7 +4,7 @@ console.log('[InnexBot] Background service worker loaded');
 // Configuration
 const CONFIG = {
   API_BASE_URL: 'https://innexbot-api-production.up.railway.app', // Update after Railway deploy
-  API_KEY: 'sk_live_your_api_key_here', // Update with your API key
+  API_KEY: 'YOUR_API_KEY_HERE', // Update with your API key from Railway
   EXTENSION_ID: 'innexbot-v1',
   EXTENSION_VERSION: '1.0.0',
   RETRY_INTERVAL: 5 * 60 * 1000, // 5 minutes
