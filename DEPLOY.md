@@ -79,9 +79,10 @@ railway up
 
 ```bash
 # Genera API key sicura (32+ caratteri)
-# Esempio: sk_live_abc123xyz789def456ghi012jkl345mno
+# Usa un generatore di password sicure o il comando:
+# node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 
-railway variables set API_KEY=sk_live_abc123xyz789def456ghi012jkl345mno
+railway variables set API_KEY=your_generated_secure_api_key_here
 railway variables set NODE_ENV=production
 railway variables set ALLOWED_ORIGINS="chrome-extension://*"
 ```
@@ -120,7 +121,7 @@ Modifica `extension/scripts/background.js`:
 ```javascript
 const CONFIG = {
   API_BASE_URL: 'https://innexbot-api-production.up.railway.app', // ← IL TUO URL RAILWAY
-  API_KEY: 'sk_live_abc123xyz789def456ghi012jkl345mno',           // ← LA TUA API KEY
+  API_KEY: 'your_generated_secure_api_key_here',                  // ← LA TUA API KEY
   EXTENSION_ID: 'innexbot-v1',
   EXTENSION_VERSION: '1.0.0',
   // ...
